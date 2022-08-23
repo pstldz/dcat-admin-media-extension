@@ -29,7 +29,7 @@ class MediaExtensionServiceProvider extends ServiceProvider
         if($views=$this->getViewPath()){
             $this->loadViewsFrom($views, 'media_extension');
         }
-
+        Admin::requireAssets('@pstldz.media-extension');
         Admin::booting(function (){
             Form::extend('photo',Photo::class);
             Form::extend('singleFile', SingleFile::class);
