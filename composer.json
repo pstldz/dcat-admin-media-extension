@@ -1,0 +1,32 @@
+{
+    "name": "pstldz/media-extension",
+    "alias": "",
+    "description": "Description...",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/pstldz/media-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "your name",
+            "email": "your email"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pstldz\\MediaExtension\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Pstldz\\MediaExtension\\MediaExtensionServiceProvider",
+        "laravel": {
+            "providers": [
+                "Pstldz\\MediaExtension\\MediaExtensionServiceProvider"
+            ]
+        }
+    }
+}
